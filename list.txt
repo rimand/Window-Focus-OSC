@@ -1,0 +1,3 @@
+TouchDesigner 2023.11510: C:/Users/ROG-ZEPHYRUS-i9-04/Desktop/Sripatum-Python-Control-Sound/Python/Window Focus OSC/Test/A/A.5.toe
+TouchDesigner 2023.11510: C:/Users/ROG-ZEPHYRUS-i9-04/Desktop/Sripatum-Python-Control-Sound/Python/Window Focus OSC/Test/B/B.6.toe
+list.txt - Window Focus OSC - Visual Studio Code [Administrator]
