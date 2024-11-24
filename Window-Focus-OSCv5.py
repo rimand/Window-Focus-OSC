@@ -15,10 +15,16 @@ from pythonosc.osc_server import BlockingOSCUDPServer
 import threading
 from pywinauto import Application
 from pywinauto.findwindows import find_window
+import sys
 
 osc_port = 7005
 osc_server_thread = None
-gui_window_title = "Window-Focus-OSCv5"  # ชื่อหน้าต่าง GUI ของตัวเอง
+gui_window_title = "HLAB : Window Focus OSCv5"  # ชื่อหน้าต่าง GUI ของตัวเอง
+
+def resource_path(relative_path):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
 
 def log_program_names():
     """บันทึกรายชื่อโปรแกรมที่พบในระบบลงไฟล์ log.txt"""
@@ -163,6 +169,10 @@ def change_osc_port():
 root = tk.Tk()
 root.title(gui_window_title)
 root.geometry("500x600")
+
+icon_path = resource_path("logo_w.png")
+icon = tk.PhotoImage(file=icon_path)
+root.tk.call("wm", "iconphoto", root._w, icon)
 
 # ช่องป้อนพอร์ต OSC
 port_frame = tk.Frame(root)
