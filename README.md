@@ -18,3 +18,6 @@ A simple tool for managing and controlling program windows via **OSC**.
 1. Run the program:  
    ```bash
    python Window-Focus-OSCv5.py
+
+![image](https://github.com/user-attachments/assets/03a5640e-4a17-43d4-9fc9-dd89e6776167)
+
